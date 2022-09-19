@@ -14,4 +14,16 @@ void FillUserArray (string [] userArray)
         Console.Write ($"Введите {i+1}-й элемент массива: ");
         userArray [i] = Console.ReadLine();
     }
+// На этой ветке создаем метод для вывода элементов массива
+
+
+void PrintArray (string [] printArray)
+{
+    int length = printArray.Length;
+    Console.Write ("[");
+    for (int i = 0; i < length-1; i++)
+    {
+        Console.Write (printArray[i]+", ");
+    }
+    Console.Write ($"{printArray[length-1]}]");
 }
